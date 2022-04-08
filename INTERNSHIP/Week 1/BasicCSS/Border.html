@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border</title>
+    <!-- <link rel="stylesheet" href="Border.css"> -->
+
+    <style>
+        /* Border style property */
+        p.dotted {
+            border-style: dotted;
+            padding: 8px;
+        }
+
+        p.dashed {
+            border-style: dashed;
+            padding: 8px;
+        }
+
+        p.solid {
+            border-style: solid;
+            padding: 8px;
+        }
+
+        p.double {
+            border-style: double;
+            padding: 8px;
+        }
+
+        p.groove {
+            border-style: groove;
+            padding: 8px;
+        }
+
+        p.ridge {
+            border-style: ridge;
+            padding: 8px;
+        }
+
+        p.inset {
+            border-style: inset;
+            padding: 8px;
+        }
+
+        p.outset {
+            border-style: outset;
+            padding: 8px;
+        }
+
+        p.none {
+            border-style: none;
+            padding: 8px;
+        }
+
+        p.hidden {
+            border-style: hidden;
+            padding: 8px;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+            padding: 8px;
+        }
+
+        div {
+            margin: 50px;
+        }
+
+
+        /* Border width property */
+        p.one {
+            border-style: solid;
+            border-width: 5px 20px;
+            /*Specific Side Widths: 5px top and bottom, 20px on the sides */
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        p.three {
+            border-style: dotted;
+            border-width: 2px;
+        }
+
+        p.four {
+            border-style: dotted;
+            border-width: thick;
+        }
+
+
+        /* Border color property */
+        p.first {
+            border-style: solid;
+            border-color: red;
+        }
+
+        p.second {
+            border-style: solid;
+            border-color: blue green red black;
+            /* red top, green right, blue bottom and yellow left */
+            /* Specific Side Colors */
+        }
+
+        /* Border radius property */
+        p.r1 {
+            border: 4px solid blue; /*width style color*/
+            border-radius: 5px;
+        }
+
+        p.r2 {
+            border: dotted red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The border-style Property- Syntax: <span style="color:green;">border-style: attribute_name;</span> </h2>
+    <div>
+        <p class="dotted">A dotted border.</p>
+        <p class="dashed">A dashed border.</p>
+        <p class="solid">A solid border.</p>
+        <p class="double">A double border.</p>
+        <p class="groove">A groove border.</p>
+        <p class="ridge">A ridge border.</p>
+        <p class="inset">An inset border.</p>
+        <p class="outset">An outset border.</p>
+        <p class="none">No border.</p>
+        <p class="hidden">A hidden border.</p>
+        <p class="mix">A mixed border.</p>
+    </div> <br> <br>
+
+    <div>
+        <p class="one">Specific Side Widths property.</p>
+        <p class="two">Border width property.</p>
+        <p class="three">Border width property.</p>
+        <p class="four">Border width property.</p>
+    </div>
+
+    <div>
+        <p class="first">Border color property.</p>
+        <p class="second">Border Specific Side Colors property.</p>
+    </div>
+
+
+    <div>
+        <p class="r1">Border radius property.</p>
+        <p class="r2">Border radius property.</p>
+    </div>
+</body>
+
+</html>

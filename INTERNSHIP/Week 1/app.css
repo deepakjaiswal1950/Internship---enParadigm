@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    background: black;
+    font-family: sans-serif;
+}
+
+h2,
+h4,
+p {
+    margin: 0;
+
+}
+
+.page {
+    background-color: #fff;
+    display: block;
+    margin: 3rem auto 3rem auto;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.page[size="A4"] {
+    width: 21cm;
+    height: 29.5cm;
+    overflow-x: hidden;
+
+}
+
+
+.header {
+    padding: 5px;
+    text-align: center;
+    height: 1cm;
+    /* background: rgb(224, 68, 112); */
+    background: linear-gradient(to right, red 10%, 20%, rgb(184, 6, 140));
+    color: black;
+    font-size: 18px;
+}
+
+
+.footer {
+    padding: 5px;
+    text-align: center;
+    height: 4cm;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+#gq {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+#pname {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+
+input {
+    width: 14px;
+    font-weight: bold;
+    border: 1px solid;
+    /* border-right: 0; */
+    font-size: 16px;
+    font-family: Arial;
+    float: left;
+    margin: 0;
+}
+
+#dob {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.secondline {
+    margin-top: 7px;
+}
+
+#gender {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.thirdline,
+.fourline,
+.fiveline {
+    margin-top: 7px;
+}
+
+
+.sixline,
+.sevenline {
+    margin-top: 10px;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+
+#pd {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+
+.bfirstline,
+.bsecondline,
+.bthirdline {
+    margin-top: 6px;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+.bfourline {
+    margin-top: 32px;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+#mytable {
+    width: 672px;
+    height: 40px;
+    font-size: 12px;
+    padding: 0px;
+    text-align: left;
+    border: 1px groove #000;
+    border-collapse: collapse;
+    font-weight: 100;
+}
+
+
+#emp, #sps, #chd {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+
+#mytable1 {
+    width: 672px;
+    height: 90px;
+    font-size: 14px;
+    padding: 0px;
+    text-align: left;
+    border: 0px groove #000;
+    border-collapse: collapse;
+    background-color: rgb(227, 227, 227);
+    font-weight: 100;
+}
+
+
+.bfiveline {
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+#policy {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.pfourline {
+    margin-top: 7px;
+}
+
+.psecondline {
+    margin-top: 10px;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+.pthirdline {
+    margin-top: 7px;
+}
+
+
+.ffirstline {
+    text-align: left;
+    margin-left: 43px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.fsecondline {
+    text-align: left;
+    margin-left: 43px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+
+.fthirdline {
+    text-align: left;
+    margin-left: 43px;
+    margin-top: 5px;
+    font-size: 13px;
+}
