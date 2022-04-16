@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+
+    <style>
+        header {
+            border: 2px solid red;
+        }
+
+        img {
+            width: 34px;
+            display: block;
+            margin: auto;
+        }
+
+        h3 {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            border: 3px solid black;
+            background-color: grey;
+            margin: 4px;
+            padding: 20px;
+
+            width: 30%;
+            display: inline-block;
+            box-sizing: border-box; /*It used to fit box into given width including margin & padding*/
+
+        }
+
+        .container{
+            margin: 5px auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" alt="" class="src">
+        <h3>Welcome to My Blog</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat sint pariatur. Cum ex ut
+                blanditiis commodi exercitationem, eum temporibus reiciendis ipsa praesentium modi enim, dolorum sunt
+                sed facere iusto rem porro perspiciatis obcaecati.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat sint pariatur. Cum ex ut
+                blanditiis commodi exercitationem, eum temporibus reiciendis ipsa praesentium modi enim, dolorum sunt
+                sed facere iusto rem porro perspiciatis obcaecati.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat sint pariatur. Cum ex ut
+                blanditiis commodi exercitationem, eum temporibus reiciendis ipsa praesentium modi enim, dolorum sunt
+                sed facere iusto rem porro perspiciatis obcaecati.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
