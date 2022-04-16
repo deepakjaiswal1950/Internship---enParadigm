@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexible Box</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize container as flex box */
+            display: flex;
+
+            /* Properties for flex container */
+            flex-direction: column;  /*make box in column*/
+            flex-direction: row-reverse; /*reverse the flex box row-wise*/
+            flex-direction: column-reverse; /*reverse the flex box column-wise*/
+            flex-direction: row; /* row is default value of flex*/
+        }
+
+        .box{
+            width: 80px;
+            height: 150px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox Learning</h1>
+    <div class="container">
+        <div class="box" id="item-1">First Box</div>
+        <div class="box" id="item-2">Second Box</div>
+        <div class="box" id="item-3">Third Box</div>
+        <div class="box" id="item-4">Fourth Box</div>
+        <div class="box" id="item-5">Fifth Box</div>
+        <div class="box" id="item-6">Sixth Box</div>
+    </div>
+</body>
+</html>
