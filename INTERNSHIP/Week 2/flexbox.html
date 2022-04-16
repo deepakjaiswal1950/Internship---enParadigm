@@ -7,27 +7,72 @@
     <title>Flexible Box</title>
     <style>
         .container{
-            height: 500px;
+            height: 544px;
             width: 100%;
             border: 2px solid black;
             /* Initialize container as flex box */
             display: flex;
 
             /* Properties for flex container */
-            flex-direction: column;  /*make box in column*/
-            flex-direction: row-reverse; /*reverse the flex box row-wise*/
-            flex-direction: column-reverse; /*reverse the flex box column-wise*/
-            flex-direction: row; /* row is default value of flex*/
+            /* flex-direction: column; */  /*make box in column*/
+            /* flex-direction: row-reverse; */ /*reverse the flex box row-wise*/
+            /* flex-direction: column-reverse; */ /*reverse the flex box column-wise*/
+            /* flex-direction: row; */ /* row is default value of flex*/
+
+            /* flex-wrap:nowrap; */ /*default value*/
+            /* flex-wrap: wrap-reverse; */ /*reverse the wrap around container*/
+            /* flex-wrap: wrap;
+
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content: center; */ /*make center align using space b/w two boxes*/
+            /* justify-content: space-between; *//*only space b/w boxes*/
+            /* justify-content: space-evenly; *//*same space around a box evenly*/
+            /* justify-content: space-around; *//*space around boxes may not be even*/
+
+            /*Alignment*/
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: stretch; */ /* make vertically even space*/
+            /* align-items: flex-start; */ /*Default value*/ 
         }
 
         .box{
-            width: 80px;
+            width: 10%;
             height: 150px;
             background-color: tomato;
             border: 2px solid green;
             margin: 10px;
             padding: 3px;
         }
+
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /*flex-grow: 2;*/ /*item-1 box grow 2 times as compare to other*/
+            /*flex-shrink: 2;*/ /*item-1 box shrink 2 times as compare to other*/
+
+        }
+        #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+
+            /* flex-basis: 160px; */ /*controlling width and height of box based on direction*/
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+        #item-3{
+            /* flex: 2 2 230px; */  /*grow shrink basis*/
+            
+            /*Alignment self*/
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+
+            }
+
         
     </style>
 </head>
@@ -38,9 +83,11 @@
         <div class="box" id="item-1">First Box</div>
         <div class="box" id="item-2">Second Box</div>
         <div class="box" id="item-3">Third Box</div>
-        <div class="box" id="item-4">Fourth Box</div>
+
+        <!--Below used in case of container-->
+        <!-- <div class="box" id="item-4">Fourth Box</div> 
         <div class="box" id="item-5">Fifth Box</div>
-        <div class="box" id="item-6">Sixth Box</div>
+        <div class="box" id="item-6">Sixth Box</div> -->
     </div>
 </body>
 </html>
