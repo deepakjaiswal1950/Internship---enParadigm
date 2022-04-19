@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    /* margin: auto; */
+    /* Make container in center align*/
+}
+
+.form {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin-top: 12%;
+
+}
+
+.form h2 {
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px;
+}
+
+.box {
+    padding: 11px;
+    width: 60%;
+    margin: 12px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 12px;
+}
+
+#submit {
+    padding: 11px 20px;
+    width: 45%;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.form a {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.form a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1F2FE;
+    width: 60%;
+    justify-content: center;
+
+    /* Set background image at center */
+    background-image: url('girl.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: unset;
+
+}
+
+@media only screen and (max-width:1036px) {
+    .right-side {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
