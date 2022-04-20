@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table without using table tag</title>
+
+    <style>
+        .table {
+            display: flex;
+            width: 60%;
+            margin: auto;
+        }
+
+        .column {
+            width: 100%;
+        }
+
+        .row, .rowt {
+            border: 1px black solid;
+            height: 2em;
+            text-align: center;
+
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .rowt{
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <div class="column">
+            <div class="row">Name</div>
+            <div class="rowt">John</div>
+            <div class="rowt">David</div>
+        </div>
+        <div class="column">
+            <div class="row">Address</div>
+            <div class="rowt">London</div>
+            <div class="rowt">New York</div>
+        </div>
+        <div class="column">
+            <div class="row">Salary</div>
+            <div class="rowt">$500</div>
+            <div class="rowt">$450</div>
+        </div>
+    </div>
+</body>
+
+</html>

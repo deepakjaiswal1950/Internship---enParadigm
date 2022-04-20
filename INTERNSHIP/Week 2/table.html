@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table without <table> tag</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .Table {
+            display: table;
+            text-align: center;
+        }
+
+        .Table .Table-tr {
+            display: table-row;
+        }
+
+        .Table .Table-tr .Table-td {
+            display: table-cell;
+            padding: 15px 25px;
+            border: 1px solid black;
+        }
+
+        .Table .title {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Table">
+        <div class="Table-tr title">
+            <div class="Table-td"> Role </div>
+            <div class="Table-td"> Name </div>
+            <div class="Table-td"> Age</div>
+            <div class="Table-td"> Address</div>
+            <div class="Table-td"> Salary</div>
+        </div>
+
+        <div class="Table-tr">
+            <div class="Table-td"> item1</div>
+            <div class="Table-td"> item2</div>
+            <div class="Table-td"> item3</div>
+            <div class="Table-td"> item4</div>
+            <div class="Table-td"> item5</div>
+        </div>
+
+        <div class="Table-tr">
+            <div class="Table-td"> item6</div>
+            <div class="Table-td"> item7</div>
+            <div class="Table-td"> item8</div>
+            <div class="Table-td"> item9</div>
+            <div class="Table-td"> item10</div>
+        </div>
+
+        <div class="Table-tr">
+            <div class="Table-td"> item11</div>
+            <div class="Table-td"> item12</div>
+            <div class="Table-td"> item13</div>
+            <div class="Table-td"> item14</div>
+            <div class="Table-td"> item15</div>
+        </div>
+
+        <div class="Table-tr">
+            <div class="Table-td"> item16</div>
+            <div class="Table-td"> item17</div>
+            <div class="Table-td"> item18</div>
+            <div class="Table-td"> item19</div>
+            <div class="Table-td"> item20</div>
+        </div>
+
+
+        <div class="Table-tr">
+            <div class="Table-td"> item21</div>
+            <div class="Table-td"> item22</div>
+            <div class="Table-td"> item23</div>
+            <div class="Table-td"> item24</div>
+            <div class="Table-td"> item25</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
