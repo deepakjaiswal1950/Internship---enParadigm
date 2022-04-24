@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,56 +12,313 @@
     display: flex;
     flex-direction: column;
     width: 31.2%;
-    height: 100vh;
+    height: 100%;
     background-color: #E1F2FE;
-    
+
+    /* Set background image at center */
+    background-image: url('girl.png');
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    background-size: unset;
 }
 
 .left-header {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     width: 100%;
     height: 13%;
+    margin: 40px 0 0 50px;
 }
-
 
 .right-side {
     display: flex;
     flex-direction: column;
     width: 68.8%;
-    height: 100vh;
-    background-color: red;
-    
-
-    /* font-family: 'Open Sans', sans-serif; */
+    height: 100%;
+    /* background-color: red; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .right-header {
-    background-color: pink;
-    width: 100%;
+    /* background-color: pink; */
     height: 13%;
+    position: fixed;
+    right: 3%;
+}
+
+.right-header p {
+    margin-top: 12%;
+}
+
+.loginButton {
+    border: 1px solid #0372f2;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 46px;
+    margin-left: 24px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #0372f2;
 }
 
 
-.container {
-    width: 60%;
+
+.right-side-container {
+    width: 40%;
     height: 80%;
     margin: auto;
-    margin-top: 0;
-    background-color: blue;
+    margin-top: 9.4%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 3.5%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #0372f2;
+    color: white;
+    padding: 3.3%;
+    margin: 8px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.social p {
+    text-align: center;
+    margin-top: 7%;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.social {
+    margin: auto;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+    background: #fff;
+    padding: 1.7%;
+    width: 32.2%;
+    margin-left: 1px;
+    text-align: left;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+}
+
+#btn-box img {
+    margin-left: 14%;
+    margin-right: 2.5%;
+    vertical-align: middle;
+}
+
+.btn-txt {
+    margin-left: 1.5%;
+    font-size: 12px;
+}
+
+
+.stat1 {
+    margin-top: 7%;
+    font-size: 12px;
+    text-align: center;
+    color: #aaa;
+}
+
+.stat2 {
+    margin-top: 3.5%;
+    font-size: 12px;
+    text-align: center;
+    color: #aaa;
+}
+
+#bold-text {
+    font-weight: bold;
+    color: #aaa;
+    font-size: 12px;
 }
 
 
 
+/* Make css visible for phone-small */
+@media only screen and (min-width: 320px) and (max-width:404px) {
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    #header-span-text {
+        display: none;
+    }
+
+    .right-side-container {
+        width: 80%;
+        height: 80%;
+        margin-top: 22%;
+    }
+
+    .right-header {
+        height: 13%;
+        width: 90%;
+        position: fixed;
+        right: 4%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .right-header p {
+        margin-top: 0%;
+        margin-left: 0;
+    }
+
+    .loginButton {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3 {
+        background: #fff;
+        padding: 2.5%;
+        width: 31.5%;
+        text-align: center;
+    }
 
 
+    .btn-txt {
+        display: none;
+    }
+
+    #btn-box img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Make css visible for phone-large */
+@media only screen and (min-width: 404px) and (max-width:426px) {
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    #header-span-text {
+        display: none;
+    }
+
+    .right-side-container {
+        width: 85%;
+        height: 80%;
+        margin-top: 22%;
+    }
+
+    .right-header {
+        height: 13%;
+        width: 90%;
+        position: fixed;
+        right: 4%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .right-header p {
+        margin-top: 0%;
+        margin-left: 15%;
+    }
+}
+
+/* Make css visible for tablet */
+@media only screen and (min-width: 426px) and (max-width:768px) {
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .right-header {
+        height: 13%;
+        width: 55%;
+        position: fixed;
+        right: 23%;
+        margin-top: 6%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .right-header p {
+        margin-top: 0%;
+        margin-left: 25%;
+    }
+
+    #header-span-text {
+        display: none;
+    }
+
+    .right-side-container {
+        width: 55%;
+        height: 80%;
+        margin-top: 15%;
+    }
 
 
+}
 
+/* Make css visible for laptop */
+@media (min-width: 769px) and (max-width:1206px) {
+    .left-side {
+        width: 46.5%;
+    }
 
+    .right-side {
+        width: 53.5%;
+    }
 
+    .right-side-container {
+        width: 75%;
+        height: 80%;
+        margin-top: 18%;
+    }
 
+    .tablet-logo {
+        display: none;
+    }
+}
 
-
-
-
-@media only screen and (max-width:426px) {}
+/* Make css visible for wide screen */
+@media (min-width: 1207px) {
+    .tablet-logo {
+        display: none;
+    }
+}
