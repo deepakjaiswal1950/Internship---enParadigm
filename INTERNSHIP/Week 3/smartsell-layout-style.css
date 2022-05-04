@@ -1,0 +1,466 @@
+html {
+    font-family: "Encode Sans SC", sans-serif;
+}
+
+body {
+    height: 100vh; 
+    background: #e6e6e6;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+main {
+    /* width: 1200px; */
+    width: 100%;
+    background-color: palevioletred;
+
+    /* Apply grid */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /*Define width of column*/
+    grid-template-rows: 10.36vh 90vh 80vh 90vh 109vh 78vh 45vh 62vh;
+    /*Define height of row*/
+}
+
+.head {
+    background: green;
+    grid-column: 1/-1;
+}
+
+.section1 {
+    background: white;
+    /*rgb(176, 148, 148);*/
+    grid-column: 1/-1;
+
+    /* appying grid on section1 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container1 {
+    background-color: white;
+    /*yellow;*/
+    grid-column-start: 2/-1;
+
+    display: flex;
+
+}
+
+.container1-item {
+    background-color: white;
+    /*pink;*/
+    width: 65%;
+    height: 70%;
+
+    margin: auto;
+}
+
+.container1-item p {
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.container1-item span {
+    font-size: 20px;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15%;
+}
+
+.rounded-button {
+    width: fit-content;
+    height: 3.2rem;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 1.3rem;
+    padding: 0.8rem 2.8rem;
+}
+
+.rounded-button:hover {
+    background-color: #3A3B3A;
+    color: white;
+}
+
+
+.container2 {
+    background-color: white;
+    /*rebeccapurple;*/
+    grid-column-end: 2/-1;
+
+    /* Set background image at center */
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.section2 {
+    background: rgb(161, 111, 111);
+    grid-column: 1/-1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-card {
+    background-color: rgba(65, 190, 240, 0.133);
+    width: 95%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    height: 20%;
+    width: 50%;
+
+    margin-top: 2%;
+    margin-left: 25%;
+    color: #F15637;
+}
+
+.card-box{
+    width: 100%;
+    height: 90%;
+    background-color:antiquewhite;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.card1{
+    width: 32%;
+    height: 90%;
+    background-color:aqua;
+    border-radius: 20px;
+}
+
+.card2{
+    width: 32%;
+    height: 90%;
+    background-color:cadetblue;
+
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+.card3{
+    width: 32%;
+    height: 90%;
+    background-color:chartreuse;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+.section3 {
+    background: rgb(93, 158, 91);
+    grid-column: 1/-1;
+
+    /* make all element in section 3 center  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-third {
+    background-color: rgba(65, 240, 182, 0.133);
+    width: 95%;
+    height: 85%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.section-third img {
+    width: 45%;
+    height: 90%;
+}
+
+.sale-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-text h1 {
+    margin-left: 7%;
+    margin-top: 3%;
+    color: #F15637;
+}
+
+.sale-text p {
+    width: 80%;
+    font-size: 1.375rem;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+
+.section4 {
+    background: rgb(117, 75, 203);
+    grid-column: 1/-1;
+
+    /* make all element in section 4 center  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-forth {
+    background-color: rgba(65, 240, 182, 0.133);
+    width: 95%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.drive-text {
+    background-color: pink;
+    width: 55%;
+
+    margin-left: 4%;
+}
+
+.drive-text h1 {
+    margin-top: 7%;
+    color: #F15637;
+}
+
+.drive-text h4 {
+    margin-top: 6%;
+    color: #F15637;
+}
+
+.drive-text p {
+    font-size: 1.188rem;
+}
+
+.drive-image {
+    background-color: blue;
+    width: 45%;
+}
+
+.drive-image img {
+    margin-top: 10%;
+    width: 50%;
+    height: 86%;
+    margin-left: 15%;
+}
+
+.section5 {
+    background: rgb(40, 177, 219);
+    grid-column: 1/-1;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.girl-image {
+    background-color: pink;
+    width: 35%;
+    height: 80%;
+
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+.girl-image img {
+    width: 92%;
+    height: 85%;
+    margin-top: 10%;
+}
+
+.smartsell-special {
+    background-color: blue;
+    width: 65%;
+    height: 80%;
+
+    margin-top: 5%;
+}
+
+
+.smartsell-special h1 {
+    font-size: 3.5rem;
+    width: 70%;
+    color: white;
+    margin-left: 8%;
+}
+
+.icons-text {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon1 {
+    background-color: rgb(219, 76, 76);
+    width: 33%;
+}
+
+.icon1 img {
+    width: 26%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.icon1 p {
+    font-size: 1.25rem;
+    margin-left: 20%;
+}
+
+.icon2 {
+    background-color: #fff;
+    width: 33%;
+}
+
+.icon2 img {
+    width: 26%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.icon2 p {
+    font-size: 1.25rem;
+    margin-left: 20%;
+}
+
+.icon3 {
+    background-color: rgb(77, 114, 154);
+    width: 33%;
+}
+
+.icon3 img {
+    width: 26%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.icon3 p {
+    font-size: 1.25rem;
+    margin-left: 20%;
+}
+
+.section6 {
+    background: rgb(195, 26, 153);
+    grid-column: 1/-1;
+
+    display: flex;
+}
+
+
+.div-box {
+    width: 60%;
+    height: 35%;
+    background-color: pink;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 350px;
+}
+
+.round-text{
+    /* background-color: green; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+   
+}
+
+.round-text p {
+    margin-top: 7%;
+    font-size: 2.3rem;
+    margin-left: 15%;
+}
+
+.round-btn{
+    /* background-color: palegoldenrod; */
+    width: 50%;
+    height: 100%;
+}
+
+.button1 {
+    cursor: pointer;
+    display: flex;
+    font-size: 1.9rem;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+.rounded-button1 {
+    width: fit-content;
+    height: 3.3rem;
+    border-radius: 25px;
+    background-color: #FFC413;
+    border: 0px;
+    font-size: 1.3rem;
+    padding: 0.8rem 2.8rem;
+}
+
+.rounded-button1:hover{
+    box-shadow: 0px 5px 1px rgb(242, 188, 42);
+}
+
+.section7 {
+    background: red;
+    grid-column: 1/-1;
+
+    display: flex;
+}
+
+.footer-box{
+    width: 90%;
+    height: 90%;
+    background-color:antiquewhite;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.one{
+    width: 20%;
+    height: 100%;
+    background-color:aqua;
+}
+
+.two{
+    width: 20%;
+    height: 100%;
+    background-color:cadetblue;
+}
+
+.three{
+    width: 20%;
+    height: 100%;
+    background-color:chartreuse;
+}
+
+.four{
+    width: 20%;
+    height: 100%;
+    background-color:aquamarine;
+}
+
+.five{
+    width: 20%;
+    height: 100%;
+    background-color:burlywood;
+}
