@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+</head>
+
+<body>
+    <div>
+        <center>
+            <h2>Drag and Drop using JQuery</h2>
+        </center>
+        <hr style="border-bottom: 1px dotted #8c8b8b;" />
+
+        <div style="border:2px green dotted; width:230px;">
+            <center>
+                <label>SELECT FAVORITE PLACE:</label>
+            </center>
+
+            <ul style="list-style-type:disc" id="draggable">
+                <li>Delhi</li>
+                <li>Pune</li>
+                <li>Mumbai</li>
+                <li>Bengaluru</li>
+                <li>Vellore</li>
+                <li>Mengaluru</li>
+                <li>Chennai</li>
+                <li>Gurugram</li>
+                <li>Noida</li>
+                <li>Hyderabad</li>
+            </ul>
+        </div>
+
+        <div>
+            <div style="padding:20px; border:2px #000 dotted; width:400px;margin-top: 20px;">
+                <div>
+                    <input type="text" id="word" class="p_lang ui-droppable" />
+                    <center>Drop your choice here</center><br>
+
+                    <button id="reset">Reset</button>
+                    <button id="submit">Submit</button>
+
+                </div>
+
+            </div><br>
+            <div style="padding:20px; border:3px #000 dotted; width:400px;">
+                You have selected: <strong><span id="result_text"></span></strong>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Adding jQuery libraries -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#reset').on('click', function () {
+            $('ul').attr('id', 'draggable');
+            $('.p_lang').removeAttr('disabled', 'disabled');
+            $('.p_lang').val('');
+            $('#result_text').text('');
+        });
+
+        $('#submit').on('click', function () {
+            var text = $('#word').val();
+            if (text != "") {
+                $('#result_text').text(text);
+            }
+            else {
+                alert("Please select your choice first");
+            }
+        });
+
+        $('li').mouseover(function () {
+            $(this).css('cursor', 'pointer');
+        });
+        $("#draggable li").draggable({ helper: 'clone' });
+        $(".p_lang").droppable({
+            accept: "#draggable li",
+            drop: function (ev, ui) {
+                $(this).insertAtCaret(ui.draggable.text());
+                $(this).attr('disabled', 'disabled');
+                $("#draggable").removeAttr('id');
+            }
+        });
+    });
+
+    $.fn.insertAtCaret = function (myValue) {
+        return this.each(function () {
+            if (document.selection) {
+                this.focus();
+                sel = document.selection.createRange();
+                sel.text = myValue;
+                this.focus();
+            }
+
+            else if (this.selectionStart || this.selectionStart == '0') {
+                var startPos = this.selectionStart;
+                var endPos = this.selectionEnd;
+                var scrollTop = this.scrollTop;
+                this.value = this.value.substring(0, startPos) + myValue + this.value.substring(endPos, this.value.length);
+                this.focus();
+                this.selectionStart = startPos + myValue.length;
+                this.selectionEnd = startPos + myValue.length;
+                this.scrollTop = scrollTop;
+            } else {
+                this.value += myValue;
+                this.focus();
+            }
+        });
+    };
+</script>
+
+</html>
