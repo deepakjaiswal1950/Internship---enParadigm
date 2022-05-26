@@ -13,7 +13,7 @@
 
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark"
-			style="background-color: blue">
+			style="background-color: ">
 			<div>
 				<a href="#" class="navbar-brand"> Telephonic Directory Application </a>
 			</div>
